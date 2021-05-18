@@ -5,40 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Funniest Game : Home</title>
-    <style>
-        .rainbowEffect { animation-duration: 3s; animation-name: rainbowLink; animation-iteration-count: infinite; } 
-            @keyframes rainbowLink {     
-             0% { color: #ff2a2a; }
-             15% { color: #ff7a2a; }
-             30% { color: #ffc52a; }
-             45% { color: #43ff2a; }
-             60% { color: #2a89ff; }
-             75% { color: #202082; }
-             90% { color: #6b2aff; } 
-             100% { color: #e82aff; }
-            }
-        </style>
-        <script src="common.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    <script src="common.js"></script>
 </head>
 <body>
     <form action="">
-        <h1 class="rainbowEffect">세상에서 가장 재미있는 게임</h1>
-        <fieldset>
-            <legend>로그인</legend>
+        <h1 class="rainbowEffect" id="fontSizing" style="font-family: 'Jua', sans-serif;">세상에서 가장 재미있는 게임</h1>
+        <div id="logIn">
+            <legend id="textAlign" style="font-family: 'Jua', sans-serif;">로그인</legend>
             <ul>
                 <li>
-                    <label for="id">아이디 : </label>
-                    <input type="text" id="id"  autofocus required placeholder="공백없이 영문으로">
+                    <input type="text" id="id"  autofocus required placeholder="ID">
                 </li>
                 <li>
-                    <label for="pw">비밀번호 : </label>
-                    <input type="password" id="pw" required placeholder="대소문자 구문, 특수기호 포함">
+                    <input type="password" id="pw" required placeholder="PassWord">
                 </li>
+                <li>
+                    <input type="button" value="로그인" onclick="login();">
+                </li>
+                <div id="spacing">
+                    <li>회원가입이 안 되어있으신가요?</li>
+                    <li>
+                        <a href="SignUp.html"><input type="button" value="회원가입"></a>
+                    </li>
+                </div>
             </ul>
-            <input type="button" value="로그인" onclick="login();">
-        </fieldset>
-        <h3>회원가입이 안 되어있으신가요?</h3>
-        <a href="SignUp.html"><input type="button" value="회원가입"></a>
+            
+        </div>
     </form>
 </body>
 </html>
+
