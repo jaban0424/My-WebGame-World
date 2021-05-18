@@ -26,6 +26,7 @@ function create_id(){
             alert("비밀번호를 확인해주세요.")
         }
         else{
+            alert("회원가입을 완료했습니다.")
             location.href='login.html';
         }
     }
