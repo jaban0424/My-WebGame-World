@@ -12,7 +12,7 @@
 #logIn {
     border: white solid 2px;
     position:absolute;
-    width: 400px; height: 600px;
+    width: 300px; height: 500px;
     left: 0; right: 0;
     margin-left:auto; margin-right:auto;
     padding: 20px;
@@ -21,7 +21,7 @@
 }
 #fontSizing {
     text-align: center;
-    font-size: 3em;
+    font-size: 40px;
 }
 li {
     list-style: none;
