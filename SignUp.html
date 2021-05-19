@@ -4,29 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Funniest Game : Sign Up</title>
+    <title>The Funniest Game : Home</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    
     <script src="common.js"></script>
 </head>
 <body>
     <form action="">
-        <fieldset>
-            <legend>회원가입</legend>
+        <h1 class="rainbowEffect" id="fontSizing" style="font-family: 'Jua', sans-serif;">세상에서 가장 재미있는 게임</h1>
+        <div id="logIn">
+            <form id="oneModeum">
+                <input type="button" value="night" style="width: 50px;" onclick="
+                if(value === 'night') {
+                    document.querySelector('body').style.backgroundColor = '#222';
+                    document.querySelector('body').style.color = 'white';
+                    value = 'day'
+                }
+                else {
+                    document.querySelector('body').style.backgroundColor = '#ccc';
+                    document.querySelector('body').style.color = '#222';
+                    value = 'night'
+                }
+                ">
+            </form>
+            <legend id="textAlign" style="font-family: 'Jua', sans-serif;">회원가입</legend>
             <ul>
                 <li>
-                    <label for="id">아이디 : </label>
-                    <input type="text" id="id"  autofocus required placeholder="공백없이 영문으로">
+                    <input type="text" id="id"  autofocus required placeholder="ID">
                 </li>
                 <li>
-                    <label for="pw">비밀번호 : </label>
-                    <input type="password" id="pw" required placeholder="대소문자 구문, 특수기호 포함">
+                    <input type="password" id="pw" required placeholder="PassWord">
                 </li>
                 <li>
-                    <label for="r_pw">비밀번호 확인 : </label>
-                    <input type="password" id="r_pw" required>
+                    비밀번호 재확인
+                </li>
+                <li>
+                    <input type="password" id="pw" required placeholder="PassWord">
+                </li>
+                <li>
+                    <input type="button" value="회원가입" onclick="login();">
                 </li>
             </ul>
-            <input type="button" value="계정 생성" onclick="create_id();">
-        </fieldset>
+            
+        </div>
     </form>
 </body>
 </html>
