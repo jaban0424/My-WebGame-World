@@ -9,7 +9,7 @@ function login(){
         alert("비밀번호를 입력해 주십시오!")
     }
     else{
-        location.href='main.html';
+        location.href='choose.html';
     }
 }
 
