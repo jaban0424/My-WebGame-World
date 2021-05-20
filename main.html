@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Funniest Game : Playing(1)</title>
+    <title>main</title>
 </head>
 <body>
-    <b>현재 자산 : 500000000원</b><hr>
-    <label for="bet">배팅할 금액 : </label>
-    <input type="text" id="bet" required>
-    <button onclick="betting();"></button>
+    <h3>현재 자산</h3>
+    <p id="money">500000000원</p><hr>
+    <input type="text" id="bet_m" autofocus required placeholder="베팅할 금액 (숫자만)">
+    <input type="button" value="베팅!!" onclick="betting();">
+    <fieldset>
+        <legend>게임 결과</legend>
+        <p id="dice">.</p>
+        <p id="res">.</p>
+    </fieldset>
     <script src="js/main.js"></script>
 </body>
 </html>
