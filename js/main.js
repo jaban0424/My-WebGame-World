@@ -5,7 +5,7 @@ function betting(){
     //alert("1단계 작동성공");
     var ran;
     bet=document.getElementById("bet_m").value;
-    alert(bet);
+    //alert(bet);
     rest-=bet;
     ran=Math.floor(Math.random()*1000)%4;
     //alert("2단계 작동성공"+rest);
