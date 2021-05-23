@@ -28,23 +28,20 @@
             </form>
             <legend id="textAlign" style="font-family: 'Jua', sans-serif;">회원가입</legend>
             <ul>
+                
                 <li>
-                    <input type="text" id="nickname" required placeholder="닉네임(변경 불가)">
-                </li>
-                <li>
-                    <input type="text" id="id"  autofocus required placeholder="ID">
-                </li>
-                <li>
-                    <input type="password" id="pw" required placeholder="PassWord">
+                    <form action="PHP/active.php" method="POST">
+                        <input type="text" name="nickname" id="nickname" required placeholder="닉네임(변경 불가)">
+                        <input type="text" name="id" id="id"  autofocus required placeholder="ID">
+                        <input type="password" name="pw" id="pw" required placeholder="PassWord">
+                    </form>
                 </li>
                 <li>
                     비밀번호 재확인
-                </li>
-                <li>
-                    <input type="password" id="pw" required placeholder="PassWord">
-                </li>
-                <li>
-                    <input type="button" value="회원가입" onclick="login();">
+                    <form action="PHP/active.php" method="POST">
+                        <input type="password" id="r_pw" required placeholder="PassWord">
+                        <input type="submit" value="회원가입" onclick="create_id();">
+                    </form>
                 </li>
             </ul>
             
