@@ -1,3 +1,4 @@
+<?php
 mysqli_real_escape_string($conn, $_POST['stNUM']),
     'id'=>mysqli_real_escape_string($conn, $_POST['id']),
     'pw'=>mysqli_real_escape_string($conn, $_POST['pw'])
