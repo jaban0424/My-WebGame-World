@@ -27,7 +27,7 @@ function create_id(){
         }
         else{
             alert("회원가입을 완료했습니다.")
-            location.href='index.html';
+            location.href='.\index.html';
         }
     }
 }
