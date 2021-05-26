@@ -9,3 +9,6 @@ https://www.youtube.com/watch?v=8tle2LAzlpA
 
 천단위 구분 콤마 제거하기
 https://yuddomack.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC-replace-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%A0%9C%EA%B1%B0-%EC%88%98%EC%A0%95%EB%B3%80%ED%99%98
+
+require is not defined 해결법(이해 안됨..)
+https://velog.io/@milkcoke/Node.js-AWS-Lambda-Serverless-Framework-feat.-ES6
