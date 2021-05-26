@@ -7,21 +7,6 @@
     <title>The Funniest Game : Home</title>
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/login.js"></script>
-    <?php
-    if(isset($_POST['id'])&&isset($_POST['pw'])) {
-        $userid = $_POST['id'];
-        $userpw = $_POST['pw'];
-        $conn = mysqli_connect("localhost",'root','09rh8433','ciss');
-        $sql = "SELECT * FROM web where id='$userid'&&pw='$userpw'";
-        if($result=mysqli_fetch_array(mysqli_query($conn,$sql))) {
-            echo "사용자 이름=$userid";
-            echo '로그인 성공';
-        }
-        else {
-            echo '로그인 실패';
-        }
-    } 
-    ?>
 </head>
 <body>
     <form action="">
