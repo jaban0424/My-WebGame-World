@@ -11,11 +11,12 @@ var number=0;
 alert('1완료');
 
 class Coin {
-    constructor({name,price,number,own}) { //nid는 html에서 number input에서 받은 그 코인의 매수 개수 아이디
+    constructor({name,price,number,own,nid}) { //nid는 html에서 number input에서 받은 그 코인의 매수 개수 아이디
         this.name = name;
         this.price = price;
         this.number = number;
         this.own = own;
+        this.nid = nid;
     }
 }
 
@@ -29,5 +30,5 @@ alert('3완료');
 function purchase(coin){
     number=getElementById(coin.nid);
     money-=number*coin.price;
-    document.getElementById("money").innerText=g;
+    document.getElementById("money").innerText=money;
 }
