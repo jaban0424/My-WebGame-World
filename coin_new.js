@@ -1,4 +1,4 @@
-
+document.getElementById("jsver").innerText="0.0.1v";
 
 var money=500000000;
 
