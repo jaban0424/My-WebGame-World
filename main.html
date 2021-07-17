@@ -17,20 +17,39 @@
         <tr>
             <th>비트코인</th>
             <td>43902824</td>
-            <td><input type="number" id="bit_n"><input type="button" value="매수" onclick="purchase(bit);"></td>
+            <td><input type="number" id="idbitpn"><input type="button" value="매수" onclick="purchase(bit);"></td>
         </tr>
         <tr>
             <th>도지코인</th>
             <td>394</td>
-            <td><input type="number" id="doge_n"><input type="button" value="매수" onclick="purchase(doge);"></td>
+            <td><input type="number" id="iddogepn"><input type="button" value="매수" onclick="purchase(doge);"></td>
         </tr>
     </table>
+
     <fieldset>
         <legend>자산</legend>
         현재 자산 : <p id="money">500000000</p>
+        보유 코인 : 
+        <table>
+            <tr>
+                <th>종목</th>
+                <th>개수</th>
+                <th>매도</th>
+            </tr>
+            <tr>
+                <th>비트코인</th>
+                <td id="idbito"></td>
+                <td><input type="number" id="idbitsn"><input type="button" value="매도" onclick="sell(bit);"></td>
+            </tr>
+            <tr>
+                <th>도지코인</th>
+                <td id="iddogeo"></td>
+                <td><input type="number" id="iddogesn"><input type="button" value="매도" onclick="sell(doge);"></td>
+            </tr>
+        </table>
     </fieldset>
     <script src="coin_new.js"></script>
-    <p id="htmlver">0.0.2v</p>
+    <p id="htmlver">0.0.3v</p>
     <p id="jsver"></p>
 </body>
 </html>
