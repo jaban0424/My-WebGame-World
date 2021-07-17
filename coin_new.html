@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneCoin : Playing!</title>
+    <link rel="stylesheet" href="coin.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>종목</th>
+            <th>가격</th>
+            <th>매수</th>
+        </tr>
+        <tr>
+            <th>비트코인</th>
+            <td>43902824</td>
+            <td><input type="number" id="bit_n"><input type="button" value="매수" onclick="purchase(bit);"></td>
+        </tr>
+        <tr>
+            <th>도지코인</th>
+            <td>394</td>
+            <td><input type="number" id="doge_n"><input type="button" value="매수" onclick="purchase(doge);"></td>
+        </tr>
+    </table>
+    <fieldset>
+        <legend>자산</legend>
+        현재 자산 : <p id="money">500000000</p>
+    </fieldset>
+    <script src="coin_new.js"></script>
+</body>
+</html>
