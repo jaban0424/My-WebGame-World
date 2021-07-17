@@ -29,7 +29,7 @@ alert('3완료');
 
 function purchase(coin){
     alert("4완료");
-    number=document.getElementById(coin.nid);
+    number=document.getElementById(coin.nid).value;
     alert('5완료 '+number);
     money-=number*coin.price;
     alert('6완료'+coin.price+money);
