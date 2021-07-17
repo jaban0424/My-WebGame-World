@@ -1,4 +1,4 @@
-document.getElementById("jsver").innerText="0.0.1v";
+//document.getElementById("jsver").innerText="0.0.1v";
 
 var money=500000000;
 
@@ -28,7 +28,11 @@ var doge=new Coin({name : doge , price : dogep , number : 0 , own : 0 , nid:"dog
 alert('3완료');
 
 function purchase(coin){
+    alert('4완료');
     number=document.getElementById(coin.nid);
+    alert('5완료');
     money-=number*coin.price;
+    alert('6완료');
     document.getElementById("money").innerText=money;
+    alert('7완료');
 }
