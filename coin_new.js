@@ -22,8 +22,8 @@ class Coin {
 
 alert('2완료');
 
-var bit=new Coin({name : bit , price : bitp , number : 0 , own : 0 , nid="bit_n"})
-var doge=new Coin({name : doge , price : dogep , number : 0 , own : 0 , nid="doge_n"})
+var bit=new Coin({name : bit , price : bitp , number : 0 , own : 0 , nid:"bit_n"})
+var doge=new Coin({name : doge , price : dogep , number : 0 , own : 0 , nid:"doge_n"})
 
 alert('3완료');
 
