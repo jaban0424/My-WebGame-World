@@ -28,7 +28,7 @@ var doge=new Coin({name : doge , price : dogep , number : 0 , own : 0 , nid:"dog
 alert('3완료');
 
 function purchase(coin){
-    number=getElementById(coin.nid);
+    number=document.getElementById(coin.nid);
     money-=number*coin.price;
     document.getElementById("money").innerText=money;
 }
