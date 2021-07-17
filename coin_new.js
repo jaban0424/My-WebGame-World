@@ -28,11 +28,11 @@ var doge=new Coin({name : doge , price : dogep , number : 0 , own : 0 , nid:"dog
 alert('3완료');
 
 function purchase(coin){
-    alert('4완료');
+    alert("4완료");
     number=document.getElementById(coin.nid);
-    alert('5완료');
+    alert('5완료 '+number);
     money-=number*coin.price;
-    alert('6완료');
+    alert('6완료'+coin.price+money);
     document.getElementById("money").innerText=money;
     alert('7완료');
 }
