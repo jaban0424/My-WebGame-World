@@ -21,5 +21,3 @@ function create_id(){
         }
     }
 }
-
-addEventListener.addEventListener('click',create_id);
