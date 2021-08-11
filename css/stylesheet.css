@@ -37,6 +37,13 @@ input {
     height: 25px;
     margin-bottom: 10px;
 }
+
+#sign {
+    width: 200px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
 #spacing {
     margin-top: 30px;
 }
