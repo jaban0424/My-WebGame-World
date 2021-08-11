@@ -1,5 +1,7 @@
 'use strict';
 
+const add = document.getElementById('sign');
+
 function create_id(){
     let id=document.querySelector('#id');
     let pw=document.querySelector('#pw');
@@ -20,3 +22,5 @@ function create_id(){
         }
     }
 }
+
+addEventListener.addEventListener('click',create_id);
