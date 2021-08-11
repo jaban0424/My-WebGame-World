@@ -1,14 +1,16 @@
 'use strict';
 
 const loginBtn = document.getElementById('loginBtn');
-let idValue = document.querySelector('#id').value;
-let pwValue=document.querySelector('#pw').value;
+
 
 function login(){
-    if(idValue==""){
+    let idValue = document.querySelector('#id').value;
+    let pwValue=document.querySelector('#pw').value;
+    
+    if(idValue == ''){
         alert("아이디를 입력해 주십시오!")
     }
-    else if(pwValue==""){
+    else if(pwValue == ''){
         alert("비밀번호를 입력해 주십시오!")
     }
     else{
@@ -21,5 +23,4 @@ function login(){
         else alert('일치하는 정보가 없습니다.');
     }
 }
-
 loginBtn.addEventListener('click',login);
