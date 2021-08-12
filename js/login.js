@@ -18,6 +18,7 @@ function create_id(){
             alert("회원가입을 완료했습니다.")
             localStorage.setItem('id',id.value);
             localStorage.setItem('pw',pw.value);
+            location.href ='index.html';
         }
     }
 }
